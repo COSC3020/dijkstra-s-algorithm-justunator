@@ -20,3 +20,5 @@ to be the most efficient one!
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The complexity of my implementaion should be $\Theta(V^2)$ as it should take $2V$ time to create the distance and visited arrays as both scales with $V$ nodes. In combination with the loops, where the while loop runs $V$ times and both for loops will run each $V$ times as it is a adjacency matrix so checking every edge is the same as checking every node, thus creating $V^2 + V^2$ or $2V^2$ times. This leads to $2V^2 + 2V$ which is $\Theta(V^2)$ asymptotically.
